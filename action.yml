@@ -1,0 +1,15 @@
+name: 'write-good'
+description: 'run write-good english prose linter on all markdown files in a repo'
+inputs:
+  md-files:
+    description: '.md files to run the linter on'
+    required: true
+    default: '*.md'
+outputs:
+  suggestions:
+    description: 'write-good suggestions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.md-files }}
