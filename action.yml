@@ -1,19 +1,9 @@
 name: 'write-good'
 description: 'run write-good english prose linter on all markdown files in a repo'
 author: 'Joshua LaBelle'
-  #  inputs:
-  #    md-files:
-  #      description: '.md files to run the linter on'
-  #      required: false
-  #      default: 'README.md'
-  #  outputs:
-  #    suggestions:
-  #      description: 'write-good suggestions'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-    #args:
-    #  - ${{ inputs.md-files }}
 branding:
   icon: 'shield'
   color: 'blue'
