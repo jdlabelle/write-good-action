@@ -9,4 +9,4 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v4
       - name: Run the custom write-good action
-        uses: jdlabelle/write-good-action@main
+        uses: jdlabelle/write-good-action@inputs_feature
