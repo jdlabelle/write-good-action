@@ -1,9 +1,15 @@
 name: 'write-good'
 description: 'run write-good english prose linter on all markdown files in a repo'
 author: 'Joshua LaBelle'
+inputs:
+  exclude_checks:
+    description: "Provide an argument to write-good to exclude a specific check"
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.exclude_checks }}
 branding:
   icon: 'shield'
   color: 'blue'
