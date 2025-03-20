@@ -34,7 +34,7 @@ Checks you can specify to exclude:
 
 ```yaml
  name: Run the write-good action
- uses: jdlabelle/write-good-action@v1
+ uses: jdlabelle/write-good-action@main
  with:
    checks: --passive
  ```
