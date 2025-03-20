@@ -10,12 +10,12 @@ by Brian Ford.
 ### `checks`
 
 **Optional** The name of the check that you want to include/exclude. All checks
-will be run if no input is included. E-prime is the only check disabled by default.
+will run if no input included. E-prime check disabled by default.
 
 Activate e-prime checks with the default:
 * `--yes-eprime`
 
-Only run one specific check by including one of the following:
+Run one specific check by including one of the following:
 * `--passive`
 * `--so`
 * `--weasel`
