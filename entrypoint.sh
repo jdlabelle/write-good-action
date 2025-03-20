@@ -1,6 +1,8 @@
 #!/bin/bash
 
-MD_FILES=$(find . -type f -name "*.md")
+# Find all MD files and read them into an array called MD_FILES
+# -t removes trailing newlines. readarray is the same as the "mapfile" command.
+readarray -t MD_FILES < <(find . -type f -name "*.md")
 
 # DEBUG: Check the arguments that are being passed
 echo "Number of Arguments passed: $#"
