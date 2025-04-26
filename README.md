@@ -38,3 +38,6 @@ Checks you can specify to exclude:
  with:
    checks: --passive
  ```
+
+ ## Future Updates
+ Add linting support for Tex files
