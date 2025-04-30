@@ -11,6 +11,7 @@ for arg in "$@"; do
     echo "$arg"
 done
 
+RESULT = 0
 # Check to see of an optional argument was passed as input
 if [[ -n $1 ]]; then
     echo "Checks argument supplied"
@@ -19,11 +20,22 @@ if [[ -n $1 ]]; then
     for file in "${FILES[@]}"; do
         echo "linting $file"
         write-good "$file" "$INPUT_CHECKS"
+	if [[ $? -ne 0 ]]; then
+	    RESULT = 1
+	fi
     done
 else
     #for file in "${MD_FILES[@]}"; do
     for file in "${FILES[@]}"; do
         echo "linting $file"
         write-good "$file"
+	if [[ $? -ne 0 ]]; then
+	    RESULT = 1
+	fi
     done
 fi
+
+if [[ $RESULT -ne 0 ]]; then
+    exit 1
+fi
+exit 0
