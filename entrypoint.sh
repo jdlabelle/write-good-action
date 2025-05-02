@@ -11,7 +11,7 @@ for arg in "$@"; do
     echo "$arg"
 done
 
-RESULT = 0
+RESULT=0
 # Check to see of an optional argument was passed as input
 if [[ -n $1 ]]; then
     echo "Checks argument supplied"
@@ -21,7 +21,7 @@ if [[ -n $1 ]]; then
         echo "linting $file"
         write-good "$file" "$INPUT_CHECKS"
 	if [[ $? -ne 0 ]]; then
-	    RESULT = 1
+	    RESULT=1
 	fi
     done
 else
@@ -30,7 +30,7 @@ else
         echo "linting $file"
         write-good "$file"
 	if [[ $? -ne 0 ]]; then
-	    RESULT = 1
+	    RESULT=1
 	fi
     done
 fi
