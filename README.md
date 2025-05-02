@@ -40,4 +40,4 @@ Checks you can specify to exclude:
  ```
 
  ## Future Updates
- Add option to select a specific filetype, instead of defualting to both.
+ Add option to select a specific filetype, instead of defaulting to both.
