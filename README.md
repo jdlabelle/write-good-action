@@ -1,6 +1,6 @@
 # write-good-action
 
-Runs the write-good english prose linter on all markdown files in a repository.
+Runs the write-good english prose linter on all markdown and latex files in a repository.
 
 [Write-Good](https://github.com/btford/write-good) english prose linter, created
 by Brian Ford.
@@ -40,4 +40,4 @@ Checks you can specify to exclude:
  ```
 
  ## Future Updates
- Add linting support for Tex files
+ Add option to select a specific filetype, instead of defualting to both.
